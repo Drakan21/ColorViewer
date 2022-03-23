@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import Footer from "./Footer";
+import Content from "./Content";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
+
+import { FaToggleOff, FaToggleOn } from "react-icons/fa";
+import { useState } from "react";
+
+const App = () => {
+	const [theme, setTheme] = useState("dark");
+
+	return (
+		<main className={`App ${theme === "dark" ? "" : "light"}`}>
+			<button
+				title={`Toggle ${theme === "dark" ? "Light" : "Dark"} Mode`}
+				className="themeBtn"
+				aria-label={`Toggle theme to ${theme === "dark" ? "light" : "dark"} mode.`}
+				onClick={() => (theme === "dark" ? setTheme("light") : setTheme("dark"))}
+			>
+				{theme === "light" ? <FaToggleOff /> : <FaToggleOn />}
+			</button>
+			<Header title="Color Viewer" />
+			<Content />
+			<Footer />
+		</main>
+	);
+};
 
 export default App;

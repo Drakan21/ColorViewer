@@ -1,0 +1,219 @@
+.colorPreview {
+	width: 300px;
+}
+.colorPreview > * + * {
+	margin-top: 1rem;
+}
+.colorBlock {
+	position: relative;
+	z-index: 1;
+	min-height: 30vh;
+	max-height: 300px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: var(--c-border);
+	border-radius: 10px;
+	display: grid;
+	place-content: center;
+	transition: background-color 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	box-shadow: var(--bx-shadow);
+	overflow: hidden;
+}
+.colorBlock > p {
+	color: hsl(50 50% 50% / 1);
+	mix-blend-mode: difference;
+	text-rendering: optimizeLegibility;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-family: var(--ff-cursive);
+	transform: rotate(-15deg);
+}
+
+.colorInput {
+	text-transform: lowercase;
+	font-size: 1rem;
+	width: 100%;
+	padding: 0.2rem 0.5rem;
+	border: 2px solid rgba(223, 223, 223, 0.4);
+	border-radius: 2px;
+	outline: none;
+	color: hsl(var(--fc-one) / 0.8);
+	border-radius: 10px;
+	box-shadow: var(--bx-shadow);
+	background-color: var(--c-bg-input);
+}
+.colorInput:focus {
+	border-color: hsl(195, 53%, 79%);
+}
+
+.colorList {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 0.2rem;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	position: relative;
+}
+.colorList button {
+	height: 24px;
+	width: 24px;
+	border: var(--swatch-border);
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+	transition: transform 0.1s ease-in;
+}
+.colorList button:hover,
+.colorList button:active {
+	box-shadow: var(--bx-shadow);
+	transform: scale(1.25);
+	z-index: 5000;
+}
+
+.saveBtn {
+	width: 50px;
+	height: 50px;
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	border-radius: 50%;
+	border: none;
+	font-size: 1rem;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-color: var(--bg-swatch-sv);
+	color: var(--bg-swatch-i);
+}
+.saveBtn:hover,
+.saveBtn:active {
+	cursor: pointer;
+	background-color: hsl(20 20% 20% / 0.8);
+	color: lightblue;
+}
+
+.colorValues {
+	position: absolute;
+	width: 260px;
+	height: min-content;
+	right: 0.5rem;
+	top: -0.8rem;
+	display: grid;
+	gap: 0;
+	grid-template-areas:
+		"colorRGB btn"
+		"colorHSL btn"
+		"colorHEX btn"
+		"none none";
+	grid-template-columns: 1fr;
+	justify-content: end;
+	font-size: 0.5rem;
+	font-family: monospace;
+	color: hsl(var(--fc-two) / 1);
+	text-rendering: optimizeLegibility;
+	mix-blend-mode: difference;
+	z-index: 0;
+	text-align: right;
+	transition: transform 0.2s ease-in-out;
+	pointer-events: all;
+}
+.colorValues:hover,
+.colorValues:focus {
+	transform: translateY(-35px);
+}
+.colorValue {
+	cursor: pointer;
+	-moz-user-select: none;
+	-webskit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding-inline-end: 0.4rem;
+	border-radius: 2px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.colorValue:hover {
+	background-color: var(--c-bg-input);
+	color: hsl(var(--fc-one) / 0.8);
+	font-weight: bold;
+	border-left-width: 10px;
+	border-left-style: solid;
+}
+.cvRGB {
+	grid-area: colorRGB;
+}
+
+.copyColorBtn {
+	height: 48px;
+	width: 48px;
+	grid-area: btn;
+	cursor: pointer;
+	filter: drop-shadow(var(--bx-shadow));
+}
+.copyColorBtn:hover,
+.copyColorBtn:active {
+	color: var(--c-link-h);
+}
+
+.colorBox {
+	position: relative;
+	margin: auto;
+	min-height: 25vh;
+	max-height: 300px;
+	position: relative;
+	z-index: 5;
+}
+
+.notify {
+	position: absolute;
+	z-index: 500;
+	width: 100%;
+	left: 0;
+	top: 0;
+	font-size: 0.7rem;
+	color: whitesmoke;
+	padding: 1rem 0.5rem 0.5rem;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	box-shadow: 0px 2px 2px hsl(0 0% 0% / 0.4);
+	background-color: hsl(10 10% 10% / 0.8);
+	opacity: 0;
+	place-content: center;
+	display: grid;
+}
+.show {
+	opacity: 1;
+	animation: fade-in 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.hide {
+	opacity: 0;
+	animation: fade-out 0.2s ease-in;
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fade-out {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-height: 600px) {
+	.colorBox {
+		height: 200px;
+	}
+	.colorBlock {
+		height: 100%;
+	}
+}
