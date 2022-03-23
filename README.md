@@ -22,6 +22,7 @@ Simple Color Viewer application
 
 -   Users may enter a color name, rgb, hsl, hex value
 -   Application displays color by name (if it exists by an alias) or simply the entered value as a hexidecimal.
+-   Save current color to palette (max of 20 colors)
 -   Allows the copying of said values to the clipboard for use elsewhere.
 -   Allows switching between light/dark modes for better color viewing.
 
