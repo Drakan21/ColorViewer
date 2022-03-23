@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Color Viewer (ReactJS/HTML/CSS)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple Color Viewer application
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+-   [Overview](#overview)
+    -   [Functionality](#functions)
+    -   [Screenshot](#screenshot)
+    -   [Links](#links)
+-   [My process](#my-process)
+    -   [Built with](#built-with)
+    -   [What I learned](#what-i-learned)
+    -   [Continued development](#continued-development)
+    -   [Useful resources](#useful-resources)
+-   [Author](#author)
+-   [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Functionality Provided
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   Users may enter a color name, rgb, hsl, hex value
+-   Application displays color by name (if it exists by an alias) or simply the entered value as a hexidecimal.
+-   Allows the copying of said values to the clipboard for use elsewhere.
+-   Allows switching between light/dark modes for better color viewing.
 
-### `npm test`
+### Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](./screenshot.jpg)
 
-### `npm run build`
+### Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   Solution URL: [gitHub](https://github.com/Drakan21/ColorViewer)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My process
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `npm run eject`
+-   ReactJS
+-   HTML/CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### What I learned
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   Basic ReacJS implementations for components and states.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Continued development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+• Add Storage (Local/Session) for color palettes
+• Could add some features for further color utility
+: contrasting colors
+: complimentary colors
+: etc...
 
-## Learn More
+### Useful resources
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   ReactJS Course by Dave Gray:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   [Dave Gray](https://www.youtube.com/watch?v=RVFAyFWO4go&t=10363s) - Fastastic learning materials.
+-   [ReactJS](https://reactjs.org/docs) - React JS Documentation for reference.
 
-### Code Splitting
+Other Resources:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-   [W3Schools Colors Converter Script](https://www.w3schools.com/colors/colors_converter.asp) - w3Schools script for looking up and converting colors to their respective values (name/rgba/hsl/hex, etc)
+-   [cdnj Font Awesome](https://cdnjs.com/libraries/font-awesome) - Icons, etc.
+-   [Google Fonts](https://fonts.google.com) - Fonts
 
-### Analyzing the Bundle Size
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Twitter - [@drakanion](https://www.twitter.com/drakanion)
+-   GitHub - [Drakan21/GitHub](https://github.com/Drakan21)
