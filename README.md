@@ -46,21 +46,16 @@ Simple Color Viewer application
 
 ### Continued development
 
-• Add Storage (Local/Session) for color palettes
-• Could add some features for further color utility
-: contrasting colors
-: complimentary colors
-: etc...
+-   Add Storage (Local/Session) for color palettes
+-   Could add some features for further color utility
+    -- contrasting colors
+    -- complimentary colors
+    -- etc...
 
 ### Useful resources
 
--   ReactJS Course by Dave Gray:
-
 -   [Dave Gray](https://www.youtube.com/watch?v=RVFAyFWO4go&t=10363s) - Fastastic learning materials.
 -   [ReactJS](https://reactjs.org/docs) - React JS Documentation for reference.
-
-Other Resources:
-
 -   [W3Schools Colors Converter Script](https://www.w3schools.com/colors/colors_converter.asp) - w3Schools script for looking up and converting colors to their respective values (name/rgba/hsl/hex, etc)
 -   [cdnj Font Awesome](https://cdnjs.com/libraries/font-awesome) - Icons, etc.
 -   [Google Fonts](https://fonts.google.com) - Fonts
