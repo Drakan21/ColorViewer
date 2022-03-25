@@ -55,7 +55,7 @@ Simple Color Viewer application
 
 ### Useful resources
 
--   [Dave Gray](https://www.youtube.com/watch?v=RVFAyFWO4go&t=10363s) - Fastastic learning materials.
+-   [Dave Gray](https://www.youtube.com/watch?v=RVFAyFWO4go&t=10363s) - Fantastic learning materials.
 -   [ReactJS](https://reactjs.org/docs) - React JS Documentation for reference.
 -   [W3Schools Colors Converter Script](https://www.w3schools.com/colors/colors_converter.asp) - w3Schools script for looking up and converting colors to their respective values (name/rgba/hsl/hex, etc)
 -   [cdnj Font Awesome](https://cdnjs.com/libraries/font-awesome) - Icons, etc.
